@@ -1,0 +1,359 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header styles */
+header {
+    background-color: #33cc33; /* Green background color */
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #44aa44; /* Slightly darker green */
+    overflow: hidden;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #339933; /* Dark green on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+section h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+section p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+/* Signup button styles */
+.signup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #33cc33; /* Green button background color */
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.signup-button:hover {
+    background-color: #339933; /* Dark green on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #33cc33; /* Green footer background color */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Style for the "Tips" section */
+#tips {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Style for each feature div within the "Tips" section */
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+    max-width: 50px; /* Make the icons smaller */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.feature h3 {
+    font-size: 18px; /* Reduce the heading font size */
+    color: #333;
+}
+
+.feature p {
+    font-size: 14px; /* Reduce the paragraph font size */
+    color: #666;
+}
+
+/* Style for the button within each feature */
+.feature-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #33cc33;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.feature-button:hover {
+    background-color: #339933;
+}
+
+
+/* Style for the "Content" section */
+.content {
+    padding: 20px;
+}
+
+/* Style for each "row" div within the "Content" section */
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Style for the description container */
+.description {
+    flex: 1;
+    padding: 10px;
+}
+
+.description h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.description p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Style for the image container */
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Style for the "People" section */
+.people-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow for a new row if there's not enough horizontal space */
+}
+
+/* Style for each "person" div within the "People" section */
+.person {
+    flex: 1;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    max-width: calc(25% - 20px); /* To display 4 persons per row with spacing */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for the circular background */
+.person .circle-bg {
+    width: 100px; /* Adjust the circle size as needed */
+    height: 100px; /* Adjust the circle size as needed */
+    background-color: #333; /* Color of the circle */
+    border-radius: 50%; /* Make it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Style for the person's image */
+.person .circle-bg img {
+    max-width: 100%; /* Make the images the same size */
+    height: auto;
+    border-radius: 50%; /* Make the images circular */
+}
+
+.person h3 {
+    font-size: 18px; /* Adjust heading font size */
+    color: #333;
+    margin-top: 10px;
+}
+
+.person p {
+    font-size: 14px; /* Adjust paragraph font size */
+    color: #666;
+}
+
+
+
+
+/* CSS for the carousel */
+.carousel-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Set the maximum width of the carousel */
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the next and previous buttons (arrows) */
+/* You can customize these styles as needed */
+.carousel-container:hover .carousel-slide {
+    transform: translateX(-25%);
+}
+
+.carousel-container:hover .carousel-slide:hover {
+    transform: translateX(0);
+}
+
+
+/* styles.css */
+
+/* Add styles for the Contact section */
+#contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  /* Style the Contact Form */
+  .contact-form {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .contact-form h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form textarea {
+    resize: vertical;
+  }
+  
+  .contact-form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style the Contact Information */
+  .contact-info {
+    flex: 1;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 
+  
+}
